@@ -1,6 +1,6 @@
 const budgetEle = document.querySelector("div section .budget");
 let budgetInput = Number(prompt("Enter you budget"));
-budgetEle.innerHTML = `₹${budgetInput}`;
+budgetEle.innerHTML = ` ₹${budgetInput}`;
 const addBtnEle = document.getElementById("addBtn");
 const budgetEnteredEle = document.getElementById("budgetEntered");
 const Expense_title_Ele = document.querySelector(
@@ -17,6 +17,8 @@ addBtnEle.addEventListener("click", function () {
       budgetInput = budgetInput - Number(Expenditure_ele.value);
       console.log(budgetInput);
       budgetEle.innerHTML = budgetInput;
+      Expense_title_Ele.value = "";
+      Expenditure_ele.value = "";
     } else alert("Please fill all details");
   } else alert("Ran out of budget!");
 });
