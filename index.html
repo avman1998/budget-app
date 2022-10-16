@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              textColor:"#1C2833 ",
+              backgroundColor:"#A2D9CE  "
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="flex flex-col justify-center items-center min-h-[100vh] p-[10px] bg-backgroundColor " style="font-family: 'Montserrat', sans-serif;">
+    <h1 class="text-[300%] my-[20px] font-semibold text-center">Budget App</h1>
+    <div
+      class="flex flex-col justify-center items-center border-2 border-textColor py-[20px] px-[30px] rounded-lg"
+    >
+    
+      <section class="m-[5px] text-[150%] flex flex-wrap text-textColor font-semibold " >
+        Total Budget is :  <span class="budget text-center"></span>
+      </section>
+      <section class="flex justify-between items-center text-textColor">
+        <div class="flex flex-col m-[5px]">
+        <label class="text-[130%] text-center my-[10px]">Expense Title</label>
+        <input type="text" class="border-2 border-black Expense-title rounded text-black">
+        <div class="flex flex-col m-[5px]">
+        <label class="text-[130%] text-center my-[10px]">Expenditure</label>
+        <input type="number" class="border-2 border-black Expenditure rounded text-black">
+
+      <div>
+
+      </section>
+      <div class="flex justify-center items-center text-textColor">
+        <button id="addBtn" class="text-white bg-black rounded-lg px-[10px] w-[100%] py-[5px] text-[130%]my-[20px]">Add budget</button>
+      </div>
+      <ul id="budgetEntered" class="text-textColor my-[20px]">
+        <li>
+
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
