@@ -11,8 +11,8 @@ addBtnEle.addEventListener("click", function () {
   if (budgetInput > 0 && Expenditure_ele.value <= budgetInput) {
     if (Expense_title_Ele.value || Expenditure_ele.value) {
       budgetEnteredEle.innerHTML += `
-  <li class="border-black border-2 my-[2px] px-[10px] rounded border-gray-800">
-  <strong><em>${Expense_title_Ele.value}</em></strong> = ₹${Expenditure_ele.value}
+  <li class=" my-[2px] px-[10px] ">
+  <strong>- ${Expense_title_Ele.value}</strong> = ₹${Expenditure_ele.value}
   </li> `;
       budgetInput = budgetInput - Number(Expenditure_ele.value);
       console.log(budgetInput);
