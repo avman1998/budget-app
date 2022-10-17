@@ -1,5 +1,5 @@
 const budgetEle = document.querySelector("div section .budget");
-let budgetInput = Number(prompt("Enter you budget"));
+let budgetInput = Number(prompt("Enter your budget"));
 budgetEle.innerHTML = ` ₹${budgetInput}`;
 const addBtnEle = document.getElementById("addBtn");
 const budgetEnteredEle = document.getElementById("budgetEntered");
