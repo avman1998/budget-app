@@ -6,6 +6,8 @@ const budgetEnteredEle = document.getElementById("budgetEntered");
 const Expense_title_Ele = document.querySelector(
   "div section div .Expense-title"
 );
+console.log("Aman");
+
 const Expenditure_ele = document.querySelector("div section div .Expenditure");
 addBtnEle.addEventListener("click", function () {
   if (budgetInput > 0 && Expenditure_ele.value <= budgetInput) {
